@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MatrixCrow | Meme Coin of the Future</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      font-family: 'Orbitron', sans-serif;
+      color: #00ffe5;
+      overflow-x: hidden;
+    }
+    .matrix-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      overflow: hidden;
+    }
+    canvas#matrix {
+      width: 100%;
+      height: 100%;
+    }
+    header {
+      background: rgba(17, 24, 39, 0.9);
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      justify-content: space-between;
+      border-bottom: 2px solid #00ffe5;
+    }
+    header img {
+      height: 60px;
+    }
+    nav a {
+      color: #00ffe5;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 150px 20px 40px;
+    }
+    .hero h1 {
+      font-size: 3em;
+      color: #00ffe5;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      color: #7efef5;
+    }
+    .countdown {
+      font-size: 2em;
+      color: #ff00ff;
+      margin-top: 20px;
+    }
+    .launch-message {
+      font-size: 2.5em;
+      color: #39ff14;
+      text-shadow: 0 0 15px #39ff14;
+      animation: glitch 1s infinite;
+    }
+    @keyframes glitch {
+      0% { transform: translate(0); }
+      20% { transform: translate(-2px, 2px); }
+      40% { transform: translate(2px, -2px); }
+      60% { transform: translate(-1px, 1px); }
+      80% { transform: translate(1px, -1px); }
+      100% { transform: translate(0); }
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #00ffe5;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .section p {
+      color: #c0fef9;
+      line-height: 1.6;
+    }
+    footer {
+      background: rgba(17, 24, 39, 0.9);
+      text-align: center;
+      padding: 20px;
+      border-top: 2px solid #00ffe5;
+      color: #00ffe5;
+    }
+    .launchpad-button {
+      display: inline-block;
+      padding: 15px 30px;
+      background: #00ffe5;
+      color: black;
+      font-weight: bold;
+      font-size: 1.2em;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px #00ffe5, 0 0 20px #00ffe5;
+      margin-top: 30px;
+    }
+    .launchpad-button:hover {
+      background: #39ff14;
+      box-shadow: 0 0 15px #39ff14, 0 0 25px #39ff14;
+    }
+  </style>
+</head>
+<body>
+  <div class="matrix-background">
+    <canvas id="matrix"></canvas>
+  </div>
+
+  <header>
+    <img src="/mnt/data/mcrow logo.png" alt="MatrixCrow Logo">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#community">Community</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>MatrixCrow</h1>
+    <p>The rebellious meme coin breaking the simulation — join the awakening.</p>
+    <div class="countdown" id="countdown"></div>
+    <a href="https://raydium.io/swap/" target="_blank" class="launchpad-button">🚀 Launch MatrixCrow on Raydium</a>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About MatrixCrow</h2>
+    <p>MatrixCrow is a meme coin with a mission — to wake up the world from the illusion of control. Inspired by cyberpunk, AI, and internet counterculture, MatrixCrow blends humor, mystery, and rebellion in a token that’s as smart as it is savage. This crow isn’t just watching — it’s calling out the system.</p>
+  </section>
+
+  <section class="section" id="tokenomics">
+    <h2>Tokenomics</h2>
+    <p><strong>Supply:</strong> 1,000,000,000 MCROW<br>
+       <strong>Burn:</strong> 98% forever removed<br>
+       <strong>Liquidity:</strong> 🔒 Locked & Community-owned<br>
+       <strong>Utility:</strong> Meme contests, AI integrations, NFT perks</p>
+  </section>
+
+  <section class="section" id="roadmap">
+    <h2>Roadmap</h2>
+    <p>
+      <strong>Phase 1:</strong> Launch, Meme Explosion, Listings<br>
+      <strong>Phase 2:</strong> NFT Drop, MatrixCrow Game Teaser<br>
+      <strong>Phase 3:</strong> AI Meme Generator, DAO Governance<br>
+      <strong>Phase 4:</strong> Metaverse Integration, Global Takeover (fun intended)
+    </p>
+  </section>
+
+  <section class="section" id="community">
+    <h2>Join the Community</h2>
+    <p>Follow the crow. Join our Discord, Telegram, and Twitter to meme, scheme, and dream together. MatrixCrow is for the rebels, the thinkers, and the meme believers.</p>
+    <div style="margin-top: 20px;">
+      <a href="https://t.me/matrixcrow" target="_blank" style="margin: 0 10px; color: #00ffe5; text-decoration: none; font-size: 1.5em;">🔹 Telegram</a>
+      <a href="https://twitter.com/matrixcrow" target="_blank" style="margin: 0 10px; color: #00ffe5; text-decoration: none; font-size: 1.5em;">🔹 Twitter</a>
+      <a href="https://discord.gg/matrixcrow" target="_blank" style="margin: 0 10px; color: #00ffe5; text-decoration: none; font-size: 1.5em;">🔹 Discord</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 MatrixCrow. All rights reserved.
+  </footer>
+
+  <script>
+    // Countdown logic
+    const launchDate = new Date();
+    launchDate.setDate(launchDate.getDate() + 21);
+
+    function updateCountdown() {
+      const now = new Date();
+      const diff = launchDate - now;
+      const countdownEl = document.getElementById('countdown');
+
+      if (diff <= 0) {
+        countdownEl.innerHTML = `<div class="launch-message">💥 MatrixCrow Has Launched! 🔥<br>Welcome to the Revolution.</div>`;
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / 1000 / 60) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+
+      countdownEl.innerText =
+        `Launch in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    setInterval(updateCountdown, 1000);
+
+    // Matrix animation
+    const canvas = document.getElementById('matrix');
+    const ctx = canvas.getContext('2d');
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    const letters = 'アァイィウヴエカガキクグケゴサザシジスズセゾタダチッツヅテトナニヌネノハバパヒフヘホマミムメモヤユヨラリルレロワヲンABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'.split('');
+    const fontSize = 14;
+    let columns = canvas.width / fontSize;
+    let drops = Array(Math.floor(columns)).fill(1);
+
+    function draw() {
+      ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = '#00ff00';
+      ctx.font = fontSize + 'px monospace';
+
+      for (let i = 0; i < drops.length; i++) {
+        const text = letters[Math.floor(Math.random() * letters.length)];
+        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+        if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+          drops[i] = 0;
+        }
+
+        drops[i]++;
+      }
+    }
+
+    setInterval(draw, 33);
+  </script>
+</body>
+</html>
